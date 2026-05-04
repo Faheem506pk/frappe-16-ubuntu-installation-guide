@@ -276,6 +276,3 @@ If this guide helped you:
 * 🧠 Contribute improvements
 
 ```
-
-Just say 👍
-```
