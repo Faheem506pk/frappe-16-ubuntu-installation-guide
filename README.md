@@ -274,5 +274,3 @@ If this guide helped you:
 * ⭐ Star the repo
 * 🔁 Share with developers
 * 🧠 Contribute improvements
-
-```
