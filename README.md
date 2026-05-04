@@ -37,9 +37,17 @@ Open your Frappe site:
 http://localhost:8000
 ```
 
+## Important Notes
+
+- PostgreSQL support is experimental in Frappe v16.
+- MariaDB is recommended for stable production deployments.
+- Use a non-root Linux user when setting up and running Bench.
+- Keep your Ubuntu packages, Node.js, Python, and Bench CLI versions aligned with your project requirements.
+
 ## Table of Contents
 
 - [Requirements](#requirements)
+- [Important Notes](#important-notes)
 - [System Update](#system-update)
 - [Install Required Dependencies](#install-required-dependencies)
 - [Install Node.js 22](#install-nodejs-22)
