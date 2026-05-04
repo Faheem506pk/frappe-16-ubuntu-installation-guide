@@ -1,8 +1,5 @@
 # Frappe-16-Installation-on-Ubuntu-24.04-Complete-Setup-Guide-uv-PostgreSQL-
 Complete step-by-step guide to install Frappe Framework v16 on Ubuntu 24.04 using modern tools like uv (Python 3.14), Node.js 22+, MariaDB, and PostgreSQL (experimental). Includes full setup, troubleshooting, and production-ready configuration.
-Here’s your **complete ready-to-push GitHub README.md (Frappe 16 + Ubuntu 24.04 full guide + SEO optimized)** 👇
-
----
 
 ````md
 # 🚀 Complete Frappe 16 Installation Guide on Ubuntu 24.04
@@ -279,17 +276,6 @@ If this guide helped you:
 * 🧠 Contribute improvements
 
 ```
-
----
-
-## 💡 If you want next level
-
-I can also help you add:
-
-- GitHub repo structure (src, docs, scripts)
-- badges (Frappe version, Ubuntu, Node)
-- CI/CD workflow
-- production deployment (Nginx + Supervisor + SSL)
 
 Just say 👍
 ```
