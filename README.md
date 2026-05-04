@@ -23,6 +23,14 @@ This guide is useful for developers building ERP systems, SaaS platforms, intern
 
 ## Quick Start
 
+Use the helper script to install Ubuntu packages, Node.js 22, Yarn, uv, Python 3.14, and Bench CLI:
+
+```bash
+bash install.sh
+```
+
+Then initialize your Frappe 16 bench:
+
 ```bash
 UV_PYTHON=3.14 bench init frappe-bench-16 --frappe-branch version-16
 cd frappe-bench-16
@@ -48,6 +56,8 @@ http://localhost:8000
 
 - [Requirements](#requirements)
 - [Important Notes](#important-notes)
+- [Architecture Overview](#architecture-overview)
+- [Installer Script](#installer-script)
 - [System Update](#system-update)
 - [Install Required Dependencies](#install-required-dependencies)
 - [Install Node.js 22](#install-nodejs-22)
@@ -60,6 +70,7 @@ http://localhost:8000
 - [Start Frappe Server](#start-frappe-server)
 - [Default Login](#default-login)
 - [Common Issues](#common-issues)
+- [Commands Summary](#commands-summary)
 - [PostgreSQL Note](#postgresql-note)
 - [Tech Stack](#tech-stack)
 - [SEO Keywords](#seo-keywords)
@@ -71,6 +82,29 @@ http://localhost:8000
 - sudo user access
 - Stable internet connection
 - Basic Linux terminal knowledge
+
+## Architecture Overview
+
+This repository documents a clean Frappe development stack for Ubuntu 24.04:
+
+```text
+Ubuntu 24.04
+  -> system packages, Redis, MariaDB, wkhtmltopdf
+  -> Node.js 22 and Yarn for frontend assets
+  -> uv and Python 3.14 for Python runtime management
+  -> Bench CLI for Frappe project management
+  -> Frappe Framework v16 site
+```
+
+## Installer Script
+
+Run the included installer to prepare your machine:
+
+```bash
+bash install.sh
+```
+
+The script installs dependencies and developer tooling only. Site creation is still kept manual because Bench asks for database and Administrator passwords.
 
 ## System Update
 
@@ -248,6 +282,18 @@ If a failed site exists, remove it and retry:
 ```bash
 bench drop-site platform.local --force
 bench new-site platform.local
+```
+
+## Commands Summary
+
+```bash
+sudo apt update && sudo apt upgrade -y
+bash install.sh
+UV_PYTHON=3.14 bench init frappe-bench-16 --frappe-branch version-16
+cd frappe-bench-16
+bench new-site platform.local
+bench use platform.local
+bench start
 ```
 
 ## PostgreSQL Note
